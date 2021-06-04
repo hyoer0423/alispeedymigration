@@ -12,11 +12,11 @@ relativeURLs = true
   hrefTargetBlank = true
 
 [params]
-  editURL = "https://github.com/liangfb/alispeedymigration/edit/master/content/"
+  editURL = "https://github.com/hyoer0423/alispeedymigration/edit/master/content/"
   themeVariant = "mine"
   showVisitedLinks = false
   author = "Han Sijie<sijie@amazon.com>"
-  description = "ÈçºÎ´Ó°¢ÀïÔÆÇ¨ÒÆµ½AWSÔÆ"
+  description = "ï¿½ï¿½Î´Ó°ï¿½ï¿½ï¿½ï¿½ï¿½Ç¨ï¿½Æµï¿½AWSï¿½ï¿½"
   disableSearch = false
   disableAssetsBusting = false
   disableShortcutsTitle = true
@@ -25,17 +25,17 @@ relativeURLs = true
   pygmentsCodeFences = true
   pygmentsCodefencesGuessSyntax = true
   pygmentsStyle = "tango"
-  codeRepoName = "liangfb/alispeedymigration"
+  codeRepoName = "hyoer0423/alispeedymigration"
 
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-github'></i> GitHub Project"
-url = "https://github.com/liangfb/alispeedymigration"
+url = "https://github.com/hyoer0423/alispeedymigration"
 weight = 30
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-envelope'></i> Have questions?"
-url = "https://github.com/liangfb/alispeedymigration/issues"
+url = "https://github.com/hyoer0423/alispeedymigration/issues"
 weight = 40
 
 [outputs]
