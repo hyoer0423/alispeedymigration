@@ -1,7 +1,7 @@
 ﻿---
 title: "Cloud9 设置"
 chapter: false
-weight: 23
+weight: 32
 ---
 ### Cloud9 实例设置
 

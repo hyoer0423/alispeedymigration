@@ -1,14 +1,14 @@
 ---
 title: "安装配置 Kubernetes 工具"
 chapter: false
-weight: 42
+weight: 22
 ---
 
 亚马逊EKS集群需要kubectl和kubelet二进制文件以及aws-cli或aws-iam-authenticator二进制文件，以允许对你的Kubernetes集群进行IAM认证。
 {{% notice tip %}}
 在本讲座中，我们将向你提供下载Linux
 二进制文件。如果你运行的是Mac OSX/Windows，请[参见EKS官方文档
-for the download links.](https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html)
+](https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html)
 {{% /notice %}}
 
 #### Install kubectl
@@ -22,7 +22,7 @@ sudo chmod +x /usr/local/bin/kubectl
 
 #### Update awscli
 
-Upgrade AWS CLI according to guidance in [AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/install-linux.html).
+根据 [AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/install-linux.html)来升级AWS CLI
 
 ```bash
 sudo pip install --upgrade awscli && hash -r
@@ -42,7 +42,7 @@ echo 'yq() {
 }' | tee -a ~/.bashrc && source ~/.bashrc
 ```
 
-#### Verify the binaries are in the path and executable
+#### 验证二进制文件是否在路径中，是否可执行
 
 ```bash
 for command in kubectl jq envsubst aws
@@ -65,6 +65,7 @@ kubectl completion bash >>  ~/.bash_completion
 echo 'export LBC_VERSION="v2.2.0"' >>  ~/.bash_profile
 .  ~/.bash_profile
 ```
+#### 路径以及变量配置
 我们应该将我们的aws cli配置为默认的当前区域
 ```bash
 export ACCOUNT_ID=$(aws sts get-caller-identity --output text --query Account)

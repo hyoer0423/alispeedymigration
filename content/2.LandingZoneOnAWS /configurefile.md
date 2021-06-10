@@ -1,7 +1,7 @@
 ---
 title: "创建worker nodes"
 chapter: false
-weight: 33
+weight: 36
 ---
 ## 创建worker nodes
 现在你的EKS主节点已经创建，你可以启动和配置你的工作节点。为了启动你的worker node，运行以下CloudFormation CLI命令:

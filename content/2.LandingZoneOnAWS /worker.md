@@ -1,7 +1,7 @@
 ---
 title: "worker node加入集群"
 chapter: false
-weight: 34
+weight: 37
 ---
 ## worker node加入集群
 

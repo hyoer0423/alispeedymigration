@@ -1,7 +1,7 @@
 ﻿---
 title: "创建Cloudformation模版"
 chapter: false
-weight: 22
+weight: 31
 ---
 
 ## 通过Cloudformation模版部署

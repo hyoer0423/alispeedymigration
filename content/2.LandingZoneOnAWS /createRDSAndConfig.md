@@ -1,7 +1,7 @@
 ﻿---
 title: "创建主节点"
 chapter: false
-weight: 31
+weight: 34
 ---
 
 ## 创建主节点

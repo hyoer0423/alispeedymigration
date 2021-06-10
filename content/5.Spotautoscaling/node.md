@@ -43,6 +43,12 @@ source <(helm completion bash)
 ```
 利用helm 安装 kube-ops-view
 ```bash
+helm install kube-ops-view \
+stable/kube-ops-view \
+--set service.type=LoadBalancer \
+--set nodeSelector.intent=control-apps \
+--version 1.2.4 \
+--set rbac.create=True
 ```
 部署kube-ops-view
 ```bash
