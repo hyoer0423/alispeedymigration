@@ -13,7 +13,7 @@ weight: 10
 
 [Amazon EKS](https://aws.amazon.com/eks/)使在AWS上使用Kubernetes部署、管理和扩展容器化应用程序变得容易。
 
-亚马逊EKS为您在多个AWS可用区运行Kubernetes管理基础设施，以消除单点故障。亚马逊EKS经认证符合Kubernetes，因此您可以使用合作伙伴和Kubernetes社区的现有工具和插件。在任何标准Kubernetes环境中运行的应用程序都是完全兼容的，并且可以轻松地迁移到Amazon EKS。
+亚马逊EKS为您在多个AWS可用区运行Kubernetes管理基础设施，以消除单点故障。亚马逊EKS经认证符合Kubernetes，因此您可以使用合作伙伴和Kubernetes社区的现有工具和插件。在任何标准Kubernetes环境中运行的应用程序都是完全兼容的，并且可以轻松地将应用迁移到Amazon EKS。
 
 
 本次实验环节包括：
