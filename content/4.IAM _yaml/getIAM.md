@@ -19,9 +19,14 @@ weight: 22
 ![](/images/ACKToEKS/modify.png) 
 3.从IAM ROLE的下拉菜单中选择eksworkshop-admin，并选择保存。  
 ![](/images/ACKToEKS/choose.png) 
+### 关闭Cloud9 的AWS managed temporary credentials设置
+* 回到cloud9平台，选择设置
+* 选择**AWS SETTINGS**
+* 关闭 **AWS managed temporary credentials**
+* 关掉设置窗口
+![](/images/ACKToEKS/off_set.png) 
 ### 更新IAM设置
 为了确保临时凭证尚未到位，我们还将删除任何现有的凭证文件。
 ```bash
 rm -vf ${HOME}/.aws/credentials
 ```
-##### 出现 IAM role valid 可以进行下一步

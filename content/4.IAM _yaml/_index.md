@@ -15,6 +15,4 @@ weight: 20
 
 1.设置Cloud9开发环境 
 
-2.以 Tokyo region为目标站点，用EKS创建一个Kubernetes群集
-
-3.利用eksctl创建EKS集群
+2.利用eksctl创建EKS集群

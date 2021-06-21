@@ -18,8 +18,7 @@ echo "export AWS_REGION=${AWS_REGION}" | tee -a ~/.bash_profile
 ```bash
 {
     "clusters": [
-        "eksworkshop-eksctl1", 
-        "k8s-workshop"
+        "eksworkshop-eksctl"
     ]
 }
 ```

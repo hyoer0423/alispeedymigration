@@ -88,3 +88,4 @@ aws configure get default.region
 ```bash
 aws sts get-caller-identity --query Arn | grep eksworkshop-admin -q && echo "IAM role valid" || echo "IAM role NOT valid"
 ```
+##### 出现 IAM role valid 可以进行下一步

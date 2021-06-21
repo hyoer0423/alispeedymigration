@@ -28,7 +28,7 @@ eksctl completion bash >> ~/.bash_completion
 $ MASTER_ARN=$(aws kms create-key --query KeyMetadata.Arn --output text)
 $ aws kms create-alias \
       --alias-name alias/k8s-master-key \
-      --target-key-id $(echo $MASTER_KEY_ARN | cut -d "/" -f 2)
+      --target-key-id $(echo $MASTER_ARN | cut -d "/" -f 2)
 ```
 创建一个eksctl部署文件（eksworkshop.yaml），用于创建你的集群，使用以下命令：
 ```bash

@@ -14,6 +14,6 @@ weight: 10
 ![](/images/ACKToEKS/console.png)
 点击 "Open AWS Console "按钮，打开AWS Console。复制这里的CLI Credentials，将在以后的实验中使用。
 {{% notice note %}}
-请注意该事件所使用的区域，只允许在Tokyo区域的行动。
+请注意该事件所使用的区域，我们需要在该地区（Tokyo）进行本次实验。
 {{% /notice  %}}
 ![](/images/ACKToEKS/open.png)
