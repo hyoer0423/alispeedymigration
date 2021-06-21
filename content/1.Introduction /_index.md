@@ -4,8 +4,9 @@ chapter: false
 weight: 10
 ---
 如果你参加本次AWS workshop活动，你将获得一个使用Event Engine的临时AWS账户，我们会给您提供一个登陆Event Engine的url。
-进入url地址，显示如下：
-点击**Accept Terms&ogins**
+进入url地址，显示如下：  
+
+点击**Accept Terms&Logins**
 ![](/images/ACKToEKS/eventengine.png)
 请设置你的团队名称,我们有足够的账户提供，参与者每人拥有自己的账户。
 ![](/images/ACKToEKS/rename.png)

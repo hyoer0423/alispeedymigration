@@ -1,7 +1,7 @@
 ---
 title: "利用eksctl来创建结点"
 chapter: false
-weight: 23
+weight: 24
 ---
 
 eksctl是一个由AWS和Weaveworks联合开发的工具，它将创建EKS集群的大部分经验自动化。

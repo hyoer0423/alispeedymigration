@@ -1,7 +1,7 @@
 ---
 title: "获取IAM权限"
 chapter: false
-weight: 21
+weight: 22
 ---
 
 ### 获取IAM权限

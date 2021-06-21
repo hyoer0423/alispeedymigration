@@ -1,7 +1,7 @@
 ---
 title: "安装配置 Kubernetes 工具"
 chapter: false
-weight: 22
+weight: 23
 ---
 
 亚马逊EKS集群需要kubectl和kubelet二进制文件以及aws-cli或aws-iam-authenticator二进制文件，以允许对你的Kubernetes集群进行IAM认证。
@@ -11,7 +11,7 @@ weight: 22
 ](https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html)
 {{% /notice %}}
 
-#### Install kubectl
+#### 安装 kubectl
 
 ```bash
 sudo curl --silent --location -o /usr/local/bin/kubectl \
@@ -20,7 +20,7 @@ sudo curl --silent --location -o /usr/local/bin/kubectl \
 sudo chmod +x /usr/local/bin/kubectl
 ```
 
-#### Update awscli
+#### 升级 awscli
 
 根据 [AWS documentation](https://docs.aws.amazon.com/cli/latest/userguide/install-linux.html)来升级AWS CLI
 
@@ -28,13 +28,13 @@ sudo chmod +x /usr/local/bin/kubectl
 sudo pip install --upgrade awscli && hash -r
 ```
 
-#### Install jq, envsubst (from GNU gettext utilities) and bash-completion
+#### 安装 jq, envsubst (from GNU gettext utilities) 和 bash-completion
 
 ```bash
 sudo yum -y install jq gettext bash-completion moreutils
 ```
 
-#### Install yq for yaml processing
+#### 为 yaml 处理，安装yq
 
 ```bash
 echo 'yq() {
@@ -51,7 +51,7 @@ for command in kubectl jq envsubst aws
   done
 ```
 
-#### Enable kubectl bash_completion
+#### 使 kubectl bash_completion可行
 
 ```bash
 kubectl completion bash >>  ~/.bash_completion
@@ -59,7 +59,7 @@ kubectl completion bash >>  ~/.bash_completion
 . ~/.bash_completion
 ```
 
-#### set the AWS Load Balancer Controller version
+#### 设置 AWS Load Balancer Controller version
 
 ```bash
 echo 'export LBC_VERSION="v2.2.0"' >>  ~/.bash_profile
