@@ -53,7 +53,7 @@ kubectl get nodes -L lifecycle
 ![](/images/ACKToEKS/lifecycle.png)
 ## 下载环境
 ```bash
-curl -O https://shawnyj.s3-ap-northeast-1.amazonaws.com/immersiondays.zip
+curl -O https://shawnyj.s3.ap-northeast-1.amazonaws.com/immersiondays.zip
 unzip immersiondays.zip
 cd immersiondays
 ```
