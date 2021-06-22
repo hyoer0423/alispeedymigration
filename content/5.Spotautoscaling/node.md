@@ -4,12 +4,14 @@ chapter: False
 weight: 52
 ---
 #### 创建单竞价实例工作组
-利用 EKSCtl 工具创建两个 SPOT ASG 工作节点组，AutoScaler 要求每个组的实例类型拥有一致的 vCPU 和 Memory 的值，因此为了实例多样性，我们实验中使用了 2 个 ASG 组来模拟更多的实例类型
+利用 EKSCTL 工具创建两个 SPOT ASG 工作节点组，AutoScaler 要求每个组的实例类型拥有一致的 vCPU 和 Memory 的值，因此为了实例多样性，我们实验中使用了 2 个 ASG 组来模拟更多的实例类型
 ```bash
 envsubst < ./eks-node-groups.yml.template >eks-node-groups.yml
 eksctl create nodegroup -f ./eks-node-groups.yml
 kubectl get nodes -L lifecycle
 ```
+显示如下：
+![](/images/ACKToEKS/spot.png)
 #### 部署竞价实例中断监听和处理程序（DaemonSet Pod）
 该中断信号监听和处理程序包含以下功能逻辑：
 * 监听竞价实例被中断通知

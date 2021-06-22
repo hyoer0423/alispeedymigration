@@ -14,7 +14,5 @@ kubectl delete -f ./kube-ops-view/deploy
 ```bash
 eksctl delete nodegroup -f eks-node-groups.yml --approve
 
-#od_nodegroup=$(eksctl get nodegroup --cluster $EKS_CLUSTER_NAME | tail -n 1 | awk '{print $2}')
-#eksctl delete nodegroup --cluster $EKS_CLUSTER_NAME --name $od_nodegroup
 eksctl delete cluster --name $CLUSTER_NAME
 ```

@@ -36,7 +36,6 @@ aws iam get-role-policy --role-name $ROLE_NAME --policy-name ASG-Policy-For-Work
 ![](/images/ACKToEKS/policy.png)
 #### 部署CA
 ```bash
-envsubst < ./cluster_autoscaler1.yml.template >cluster_autoscaler1.yml
 kubectl apply -f cluster_autoscaler1.yml
 ```
 #### 扩展服务，观察kube-ops-view
