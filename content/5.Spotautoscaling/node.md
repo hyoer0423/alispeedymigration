@@ -60,7 +60,8 @@ kubectl get svc kube-ops-view | tail -n 1 | awk '{ print "Kube-ops-view URL = ht
 得到的域名使用：808端口登陆，例如：
 http://a13ac3d385cba4bddb7d91e97c0e1f95-923967614.cn-northwest-1.elb.amazonaws.com.cn:808
 #### 部署应用跑在Spot集群上
+```bash
 kubectl apply -f nginx-to-scaleout1.yaml 
-
+```
 #### 部署应用，在kube-ops-view观察spot部署
 
