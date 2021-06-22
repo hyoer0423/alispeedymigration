@@ -5,7 +5,7 @@ weight: 51
 ---
 #### 查看环境变量
 ```bash
-echo "export CLUSTER_NAME=${CLUSTER_NAME}" | tee -a ~/.bash_profile
+echo "export CLUSTER_NAME=eksworkshop-eksctl" | tee -a ~/.bash_profile
 echo "export AWS_REGION=${AWS_REGION}" | tee -a ~/.bash_profile
 ```
 {{% notice note %}}
@@ -22,10 +22,7 @@ echo "export AWS_REGION=${AWS_REGION}" | tee -a ~/.bash_profile
     ]
 }
 ```
-2.设置cluster 名字
-```bash
-export CLUSTER_NAME=eksworkshop-eksctl1
-```
+
 #### 通过以下下命令添加role
 ```bash
 STACK_NAME=$(eksctl get nodegroup --cluster $CLUSTER_NAME -o json | jq -r '.[].StackName')

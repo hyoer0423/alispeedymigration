@@ -6,7 +6,7 @@ weight: 22
 
 ### 获取IAM权限
 1.创建一个具有管理员权限的IAM角色，[点击此](https://console.aws.amazon.com/iam/home#/roles$new?step=review&commonUseCase=EC2%2BEC2&selectedUseCase=EC2&policies=arn:aws:iam::aws:policy%2FAdministratorAccess&roleName=eksworkshop-admin)。    
-2.确认选择了AWS服务和EC2，然后点击下一步：**Permissions**。    
+2.确认选择了**AWS Service**和**EC2**，然后点击下一步：**Permissions**。    
 3.确认AdministratorAccess被选中，然后点击下一步：**Tag**来分配标签。
 ![](/images/ACKToEKS/IAM.png)     
 4.采用默认值，然后点击下一步：**Review**来审查。     

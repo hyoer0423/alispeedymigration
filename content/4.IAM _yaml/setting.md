@@ -6,8 +6,8 @@ weight: 23
 
 亚马逊EKS集群需要kubectl和kubelet二进制文件以及aws-cli或aws-iam-authenticator二进制文件，以允许对你的Kubernetes集群进行IAM认证。
 {{% notice tip %}}
-在本讲座中，我们将向你提供下载Linux
-二进制文件。如果你运行的是Mac OSX/Windows，请[参见EKS官方文档
+在本讲座中，我们在cloud9,linux环境下操作，将向您提供下载Linux
+二进制文件。如果之后您运行的是Mac OSX/Windows，请[参见EKS官方文档
 ](https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html)
 {{% /notice %}}
 

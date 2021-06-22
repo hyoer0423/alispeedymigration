@@ -25,8 +25,8 @@ eksctl completion bash >> ~/.bash_completion
 若创建集群出现 Error: field secretsEncryption.keyARN is required for enabling secrets encryption，表明您尚未创建 KMS 密钥，则可以使用 AWS CLI 创建密钥和别名
 {{% /notice  %}}
 ```
-$ MASTER_ARN=$(aws kms create-key --query KeyMetadata.Arn --output text)
-$ aws kms create-alias \
+MASTER_ARN=$(aws kms create-key --query KeyMetadata.Arn --output text)
+aws kms create-alias \
       --alias-name alias/k8s-master-key \
       --target-key-id $(echo $MASTER_ARN | cut -d "/" -f 2)
 ```
