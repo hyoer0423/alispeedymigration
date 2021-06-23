@@ -25,6 +25,8 @@ echo "export AWS_REGION=${AWS_REGION}" | tee -a ~/.bash_profile
 
 #### 通过以下下命令添加role
 ```bash
+source ~/.bash_profile
+
 STACK_NAME=$(eksctl get nodegroup --cluster $CLUSTER_NAME -o json | jq -r '.[].StackName')
 ROLE_NAME=$(aws cloudformation describe-stack-resources --stack-name $STACK_NAME | jq -r '.StackResources[] | select(.ResourceType=="AWS::IAM::Role") | .PhysicalResourceId')
 echo "export ROLE_NAME=${ROLE_NAME}" | tee -a ~/.bash_profiles
@@ -35,8 +37,9 @@ echo "export ROLE_NAME=${ROLE_NAME}" | tee -a ~/.bash_profiles
 eksctl get nodegroup --cluster ${CLUSTER_NAME}
 ```
 nodegroup 扩容
+注意<desiredCount> ,<minSize> ,<maxSize>为变量，可以自己设置大小，如3，1，2
 ```bash
-eksctl scale nodegroup --cluster=${CLUSTER_NAME} --nodes=<desiredCount> --name=nodegroup [ --nodes-min=<minSize> ] [ --nodes-max=<maxSize> ]
+eksctl scale nodegroup --cluster=${CLUSTER_NAME} --nodes=<desiredCount> --name=nodegroup --nodes-min=<minSize>  --nodes-max=<maxSize> 
 eksctl get nodegroup --cluster ${CLUSTER_NAME}
 ```
 查看node labels
