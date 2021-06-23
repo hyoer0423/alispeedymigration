@@ -57,6 +57,24 @@ kubectl get svc kube-ops-view | tail -n 1 | awk '{ print "Kube-ops-view URL = ht
 ```
 得到的域名使用：808端口登陆，例如：
 http://a13ac3d385cba4bddb7d91e97c0e1f95-923967614.cn-northwest-1.elb.amazonaws.com.cn:808
+{{% notice info %}}
+请注意您可以使用下方命令来查看部署情况，若Ready显示数为**0/1**，您需要删除并重新部署
+同时请保证您并没有链接代理和vpn，否则该端口将无法被访问
+{{% /notice  %}}
+```bash
+kubectl get deployments
+```
+#### 删除并重新部署命令如下：
+```bash
+kubectl delete deployment --all 
+kubectl delete service kube-ops-view
+kubectl delete service kube-ops-view-redis
+kubectl apply -f kube-ops-view/deploy
+kubectl describe svc kube-ops-view 
+kubectl get svc kube-ops-view | tail -n 1 | awk '{ print "Kube-ops-view URL = http://"$4 }'
+```
+若失败您也可以通过此[链接](https://files.slack.com/files-pri/T015GUGD2V6-F025TUTH1HT/eks-spot-fin.mov)观看该实验的视频讲解
+
 #### 部署应用跑在Spot集群上
 ```bash
 kubectl apply -f nginx-to-scaleout1.yaml 
