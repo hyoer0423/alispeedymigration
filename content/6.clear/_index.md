@@ -16,3 +16,4 @@ eksctl delete nodegroup -f eks-node-groups.yml --approve
 
 eksctl delete cluster --name $CLUSTER_NAME
 ```
+#### 也可以点击此[链接](https://console.aws.amazon.com/eks/home#/clusters)手动删除生成的cluster

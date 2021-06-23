@@ -12,7 +12,7 @@ weight: 22
 4.采用默认值，然后点击下一步：**Review**来审查。     
 5.在名称中输入eksworkshop-admin，然后点击**Create role**。
 ![](/images/ACKToEKS/Role.png)       
-### 将IAM ROLE 添加到CLoud 9 workspace中
+### 将IAM ROLE 添加到Cloud 9 workspace中
 1.回到[cloud9平台](https://console.aws.amazon.com/cloud9/home/account)，创建完environemnt后，点击灰色圆圈按钮（在右上角），选择**Manage EC2 Instance**  
 ![](/images/ACKToEKS/set.png)  
 2.再次选择**Actions / Security / Modify IAM Role**  
