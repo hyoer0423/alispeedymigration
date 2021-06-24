@@ -45,7 +45,8 @@ kubectl scale --replicas=10 deployment/nginx-to-scaleout
 #### 驱逐Node,观察kube-ops-view
 ```bash
 kubectl get nodes
-kubectl cordon #xxxxnode
-kubectl drain #nodename —-ignore-daemonsets
+kubectl cordon #nodename
+kubectl drain #nodename --ignore-daemonsets
+
 ```
 
