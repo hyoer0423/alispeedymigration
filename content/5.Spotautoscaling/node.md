@@ -2,6 +2,7 @@
 title: "部署竞价实例"
 chapter: False
 weight: 52
+pre: '<i class="fa fa-film" aria-hidden="true"></i> '
 ---
 #### 创建单竞价实例工作组
 利用 EKSCTL 工具创建两个 SPOT ASG 工作节点组，AutoScaler 要求每个组的实例类型拥有一致的 vCPU 和 Memory 的值，因此为了实例多样性，我们实验中使用了 2 个 ASG 组来模拟更多的实例类型
@@ -25,10 +26,6 @@ kubectl get daemonsets -n kube-system
 ```
 显示如下：
 ![](/images/ACKToEKS/get_dea.png)
-安装webhook：
-```bash
-kubectl apply -f https://raw.githubusercontent.com/nwcdlabs/container-mirror/master/webhook/mutating-webhook.yaml
-```
 
 #### 安装 kube-ops-view 方便观察节点资源和相应的 Pod 情况
 首先安装[helm](https://www.eksworkshop.com/beginner/060_helm/helm_intro/install/index.html)：
@@ -73,7 +70,8 @@ kubectl apply -f kube-ops-view/deploy
 kubectl describe svc kube-ops-view 
 kubectl get svc kube-ops-view | tail -n 1 | awk '{ print "Kube-ops-view URL = http://"$4 }'
 ```
-若失败您也可以通过此[链接](https://files.slack.com/files-pri/T015GUGD2V6-F025TUTH1HT/eks-spot-fin.mov)观看该实验的视频讲解
+若失败您也可以通过此视频观看该实验的讲解
+{{< youtube phl6LX0OXMk >}}
 
 #### 部署应用跑在Spot集群上
 ```bash
