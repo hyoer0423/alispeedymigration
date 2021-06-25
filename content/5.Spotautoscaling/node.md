@@ -70,8 +70,10 @@ kubectl apply -f kube-ops-view/deploy
 kubectl describe svc kube-ops-view 
 kubectl get svc kube-ops-view | tail -n 1 | awk '{ print "Kube-ops-view URL = http://"$4 }'
 ```
+
 若失败您也可以通过此视频观看该实验的讲解
 {{< youtube phl6LX0OXMk >}}
+
 
 #### 部署应用跑在Spot集群上
 ```bash
